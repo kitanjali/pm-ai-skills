@@ -20,6 +20,10 @@ Raw accuracy demos are easy. Knowing whether an AI feature is safe to ship is th
 - `prd-to-prompt` answers "how do we get from a doc to something testable?"
 - `red-team-feature` answers "how does this break, and who gets hurt when it does?"
 
+## Used in the wild
+
+These aren't theoretical. The eval approach in `write-evals` and the trust-boundary thinking in `red-team-feature` came out of building [**trade-classify**](https://github.com/kitanjali/trade-classify), an LLM HS-code classifier for cross-border commerce that grounds every code in real tariff data, routes high-stakes goods to human review, and reports automation precision instead of raw accuracy. If you want to see these ideas applied to a real feature, start there.
+
 ## Install
 
 A Claude Code skill is just a folder with a `SKILL.md` inside it, placed where Claude Code looks for skills.
